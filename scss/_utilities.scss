@@ -1,0 +1,41 @@
+// Variables 
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+@font-face {
+  font-family: "My Custom Font";
+  src: url("../includes/fonts/Tryst-Regular.otf") format("opentype");
+}
+
+$primary: #2470a1;
+$second: #e5f0f7;
+$grey: #5e5e5e;
+$red: #AC2900;
+$green: #1FB167; 
+
+$heading-font: 'Barlow', sans-serif;
+$main-font: 'Cormorant Garamond', serif;
+
+
+
+// background mixins
+@mixin bk-grad3($color1, $color2 ,$color3) {
+ 
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5580e9+1,094ee5+100 */
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgba($color1 , 1) 1%, rgba($color2 , 1) 50%, rgba($color3 , 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgba($color1 , 1) 1%, rgba($color2 , 1) 50%, rgba($color3 , 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba($color1 , 1) 1%, rgba($color2 , 1) 50%, rgba($color3 , 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color2,GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  }
+
+  // background mixins
+@mixin bk-grad2($color1, $color2) {
+ 
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5580e9+1,094ee5+100 */
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgba($color1 , 1) 1%, rgba($color2 , 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgba($color1 , 1) 1%, rgba($color2 , 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba($color1 , 1) 1%, rgba($color2 , 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color2,GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

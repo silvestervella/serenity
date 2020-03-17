@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+a, a:active, a:focus{
+  outline: none; 
+}
